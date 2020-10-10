@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+.row {
+    max-width: 1167px;
+    margin: 0 auto;
+}
+
+.skip a {
+    display: block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -100px
+}
+
+.skip a:focus {
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999999;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background: #fff;
+    box-shadow: 0px 3px 3px #eee
+}
+
+.topmenu .row {
+    position: relative
+}
+
+.topmenu {
+    background: #f76f6f;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 0;
+    letter-spacing: -0.5px;
+}
+
+.topmenu a {
+    transition: all 0.5s;
+}
+
+.topmenu a:hover {
+    color: rgb(255, 255, 255, 1)
+}
+
+.topmenu .sns a {
+    padding-right: 10px;
+    font-size: 12.2px;
+}
+
+.topmenu .sns a:first-child span {
+    font-size: 11px
+}
+
+.topmenu .search {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%)
+}
+
+.topmenu .search fieldset {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    height: 25px;
+}
+
+.topmenu .search input {
+    border: none;
+    background: none;
+    color: #fff;
+    padding-left: 0.5em;
+    outline: none;
+    width: 200px
+}
+
+.topmenu .search ::placeholder {
+    color: #fff
+}
+
+.topmenu .search button {
+    background: #fff;
+    color: #000;
+    border: none;
+    height: 21px;
+    padding: 0px 5px;
+    vertical-align: top;
+    font-size: 11px;
+    float: right
+}
+
+.topmenu .login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000;
+    display: none
+}
+
+.topmenu .login.on {
+    display: block
+}
+
+.topmenu .login a {
+    padding-left: 10px;
+    font-size: 11px
+}
+
+.topmenu .logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000;
+    display: none
+}
+
+.topmenu .logout.on {
+    display: block
+}
+
+.topmenu .logout a {
+    padding-left: 10px;
+    font-size: 11px
+}
+
+.logoNav {
+    position: relative;
+    height: 76px;
+}
+
+.logoNav h1 {
+    color: #ffae3d;
+    font-size: 26.25px;
+    padding: 25.875px 0px 23.875px;
+    font-weight: bold;
+    line-height: 15.75px;
+}
+
+.mobile_searchBtn {
+    display: none
+}
+
+.logoNav .open_nav {
+    display: none
+}
+
+.logoNav .close_nav {
+    display: none
+}
+
+.logoNav .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.logoNav .nav .depth1>li {
+    display: inline-block;
+    font-size: 15.75px;
+    position: relative;
+    font-weight: bold;
+    transition: all 0.5s
+}
+
+.logoNav .nav .depth1>li>a {
+    padding: 27.5px 0px 27.5px 30px;
+    display: inline-block;
+}
+
+.logoNav .nav .depth1>li.on {
+    color: #ffd23c;
+}
+
+.logoNav .nav .depth1>li:first-child {
+    color: #ffd23c
+}
+
+.logoNav .nav .depth1>li>a:after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ddd;
+    padding-left: 10px;
+}
+
+.logoNav .nav .depth1>li:first-child>a:after,
+.logoNav .nav .depth1>li:nth-child(5)>a:after {
+    visibility: hidden;
+}
+
+.logoNav .depth1>li:nth-child(1) .depth2,
+.logoNav .depth1>li:nth-child(2) .depth2,
+.logoNav .depth1>li:nth-child(3) .depth2,
+.logoNav .depth1>li:nth-child(4) .depth2,
+.logoNav .depth1>li:nth-child(5) .depth2 {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 168px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0px 0px 15px #ddd;
+    display: none
+}
+
+.logoNav .depth1>li:nth-child(6) .depth2 {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    width: 140px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 0px 0px 15px #ddd;
+    display: none
+}
+
+.logoNav .depth1>li:nth-child(1) .depth2:before,
+.logoNav .depth1>li:nth-child(2) .depth2:before,
+.logoNav .depth1>li:nth-child(3) .depth2:before,
+.logoNav .depth1>li:nth-child(4) .depth2:before,
+.logoNav .depth1>li:nth-child(5) .depth2:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 40px;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.logoNav .depth1>li:nth-child(6) .depth2:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 40px;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+
+/* .logoNav .depth1 > li:hover .depth2 { display:block }     */
+.logoNav .depth2>li {
+    line-height: 38px;
+    font-size: 16px;
+    color: #ffae3d
+}
+
+
+#footer {
+    text-align: center;
+    font-size: 12.25px
+}
+
+.footerMenu {
+    background: #eee;
+    color: #333;
+    padding: 10px
+}
+
+.footerMenu a {
+    padding-left: 11px;
+}
+
+.footerMenu a:before {
+    content: '|';
+    padding-right: 11px;
+    font-size: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.footerMenu a:first-child:before {
+    display: none
+}
+
+.comInfo {
+    background: #222;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 40px 0;
+}
+
+.comInfo .sns a {
+    font-size: 17px;
+    padding: 0px 10px 10px;
+    display: inline-block;
+}
+
+.comInfo .info span {
+    letter-spacing: -1px;
+    padding-left: 5px
+}
+
+.comInfo .info span:before {
+    content: '|';
+    padding-right: 7px;
+    font-size: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.comInfo .info span:nth-child(1):before {
+    display: none
+}
+
+.copyright {
+    background: #0a0a0a;
+    font-size: 10.5px;
+    padding: 10px 0px;
+    color: #333;
+}
+
+.frmLink {
+    margin-bottom: 10px
+}
+
+.siteLink {
+    display: inline-block;
+    vertical-align: top
+}
+
+.siteLink select {
+    padding-left: 10px;
+    font-size: 12px;
+    color: #000;
+    box-sizing: border-box;
+    width: 270px;
+    height: 36px;
+    border: solid 1px #c3c3c3;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.frmLink a {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 60px;
+    height: 36px;
+    background-color: #484848;
+    text-align: center;
+    line-height: 36px;
+}

@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@media screen and (max-width:1166px) {
+
+}
+
+@media screen and (max-width:1024px) {
+
+    #section { padding-top:193px; }
+
+    .slideOuter { height:400px; position:relative; }
+    .slideInner  .slide { 
+        height:400px;
+        background-size:cover; 
+        background-position:center; 
+        background-repeat:no-repeat; 
+        position:relative
+    }    
+
+    .slideInner .text > p:first-child {
+        font-size:50px; 
+        text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+    }   
+
+    .curriBox .copy h3 { font-size:20px; 
+        font-weight:bold }   
+    .curriBox .copy p { font-weight:bold; 
+        font-size:14px; margin:15px 0;
+        line-height:1.2  }    
+
+
+}
+
+@media screen and (max-width:767px) {
+
+    #section { padding-top:117px; }
+
+    .slideInner .text > p:first-child {
+        font-size:40px; 
+        text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+    }   
+
+    /* 유치원 활동 */
+    .act ul li { float:left; width:49%;
+        background-size:auto;
+        background-repeat:no-repeat;
+        height:186px; margin:0 0.5%; 
+        position:relative }
+
+    .act ul li div h3 { margin:10px 0; 
+        font-size:18px; font-weight:bold }     
+    .act ul li div a { 
+        padding: 3px 12px;
+        font-size: 12px; line-height: 1.5;
+        border-radius: 3px;  color: #f8f9fa;
+        border:0px solid #f8f9fa; 
+        letter-spacing:0.5px;
+        transition:all 0.5s; all:initial }
+    .act ul li div a span { text-indent:-9999px; overflow:hidden; 
+        display:inline-block; width:0px; height:0px; }
+    .act ul li div a:hover { 
+        color:#212529; background-color:#fff; all:initial }    
+    .act ul li div a i {display:inline-block; position:absolute; top:10px; right:0;
+        font-size:25px; 
+    }    
+
+    /* 교육과정안내 */
+    .curriBox > .column { float:left; width:100% }
+    .curriBox > .column:nth-child(2) { margin:0 0%;  }
+    .curriBox > .column:nth-child(2) > div { 
+        background:url(../images/main-product3.min.jpg) no-repeat;
+        height:200px;
+        background-size:cover; background-position:center; }
+    .curriBox > .column:nth-child(2) img { display:none }
+    .curriBox > .column:first-child > div:first-child,
+    .curriBox > .column:nth-child(3) > div:first-child { margin-bottom:0px } 
+    .curriBox > .column > div { position:relative;  }
+    .curriBox > .column:first-child > div,
+    .curriBox > .column:nth-child(3) > div { float:left; width:50%; }
+
+    .curriBox  .copy { position:absolute; bottom:0px;
+        left:10px; right:10px; color:#fff;
+        transition:all 0.5s }  
+    .curriBox  .column > div:hover .copy { 
+            bottom:30px; }          
+    .curriBox .copy h3 { font-size:16px; 
+            font-weight:bold }       
+    .curriBox .copy p { display:none } 
+
+
+    /* 추천후기 */
+    /* .review { background:#fdeace; padding:84px 0 } */
+.review ul li { float:left; width:100%; margin-bottom:30px; }
+.review ul li:nth-child(2) { margin:0 0%;  margin-bottom:30px;}
+.review .blockQuote { background:#fff;
+    font-size:17.5px; padding:40px; 
+    border-radius:4px; font-style:italic;
+    line-height:1.5; position:relative;
+    margin-bottom:20px; display:inline-block; width:60%; vertical-align:middle }    
+.review .blockQuote:after {
+    content:''; position:absolute;
+    top:50%; left:100%; 
+    border-top:15px solid transparent; 
+    border-bottom:15px solid transparent; 
+    border-left:15px solid #fff; 
+    border-right:none; margin-top:-15px;
+}  
+.review .client { padding:0 0 0 20px; font-size:20px; 
+    font-weight:bold; letter-spacing:-1px; display:inline-block; width:38%; vertical-align:middle }
+
+
+.bestChoice .overlay { position:absolute; 
+    top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,0.4);  line-height:1.2; padding-top:48px}  
+.bestChoice .overlay span { display:block }
+
+.csNnotice > .row > div {
+    float:left; width:100%;  }
+.csNnotice > .row > div:nth-child(2) {
+    margin:50px 0% }
+
+
+}
+
+

@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+@media screen and (max-width:1166px) {
+    .row {
+        padding: 0 10px
+    }
+
+    .topmenu .login {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: #000;
+        display: none
+    }
+
+    .logoNav .nav .depth1>li>a {
+        padding: 27.5px 10px 27.5px 30px;
+        display: inline-block;
+    }
+
+    /* 푸터구역 주소영역 */
+    .comInfo .info span:last-child {
+        display: block
+    }
+
+    .comInfo .info span:last-child:before {
+        display: none
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    .logoNav .nav .depth1>li>a {
+        padding: 27.5px 8.5px 27.5px 8.5px;
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .logoNav {
+        position: relative;
+        height: 152px;
+    }
+
+    .logoNav h1 {
+        color: #ffae3d;
+        font-size: 26.25px;
+        padding: 30px 0px 10px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center
+    }
+
+    .logoNav .nav {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .logoNav .nav .depth1 {
+        text-align: center
+    }
+
+    /* 푸터구역 통신판매업신고번호 */
+    .comInfo .info span:nth-child(6) {
+        display: block
+    }
+
+    .comInfo .info span:nth-child(6):before {
+        display: none
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+    .topmenu .search {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translate(50%);
+        display: none
+    }
+
+    .logoNav {
+        position: relative;
+        height: 76px;
+    }
+
+    .logoNav h1 {
+        color: #ffae3d;
+        font-size: 26.25px;
+        padding: 25px 0px 10px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: left
+    }
+
+    .logoNav .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff;
+    }
+
+    .logoNav .nav .depth1 {
+        padding: 20px 0
+    }
+
+    .logoNav .nav .depth1>li {
+        display: block;
+    }
+
+    .logoNav .nav .depth1>li>a {
+        padding: 10px 20px 10px 30px;
+        display: block;
+        text-align: right
+    }
+
+    .mobile_searchBtn {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        font-size: 20px
+    }
+
+    .logoNav .open_nav {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        font-size: 20px
+    }
+
+    .logoNav .close_nav {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        font-size: 20px
+    }
+
+    /* 서브메뉴박스(depth2) */
+    .logoNav .depth1>li:nth-child(1) .depth2,
+    .logoNav .depth1>li:nth-child(2) .depth2,
+    .logoNav .depth1>li:nth-child(3) .depth2,
+    .logoNav .depth1>li:nth-child(4) .depth2,
+    .logoNav .depth1>li:nth-child(5) .depth2,
+    .logoNav .depth1>li:nth-child(6) .depth2 {
+        position: static;
+        top: 85%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 0px;
+        padding: 0 40px;
+        box-shadow: 0px 0px 0px #ddd;
+        text-align: right;
+        display: none
+    }
+
+
+
+    /* 푸터구역 */
+    .comInfo .info span {
+        display: block;
+        line-height: 1.8em
+    }
+
+    .comInfo .info span:before {
+        display: none
+    }
+
+    .footerMenu {
+        background: #fff;
+        color: #333;
+        padding: 0px
+    }
+
+    .footerMenu .row {
+        padding: 0px 1px
+    }
+
+    .footerMenu a {
+        padding-left: 0px;
+        display: block;
+        padding: 10px 0px;
+        border: 1px solid #000;
+        border-bottom: none;
+    }
+
+    .footerMenu a:before {
+        display: none;
+    }
+
+    .footerMenu a:first-child:before {
+        display: none
+    }
+
+
+}

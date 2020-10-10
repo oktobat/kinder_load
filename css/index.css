@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+#section { padding-top:117px; }
+.slideOuter { height:600px; position:relative; }
+.slideOuter .marrow {
+    position:absolute; top:50%;
+    transform:translateY(-50%);
+    font-size:80px;
+    color:#fff; background:none; border:none }  
+.slideOuter .prevArrow {left:100px; z-Index:999999 }
+.slideOuter .nextArrow {right:100px}
+
+.slideOuter .slick-dots { 
+    position:absolute; bottom:20px;
+    left:50%; 
+    transform:translateX(-50%) }
+.slideOuter .slick-dots li { display:inline-block;  margin:0 5px }    
+.slideOuter .slick-dots li button {
+        width:20px; height:20px; color:#fff;
+        background:#fff; 
+        opacity:0.6;
+        border-radius:50%; border:none }    
+.slideOuter .slick-dots li.slick-active button {
+    opacity:1; }   
+
+.slideInner .slide { 
+    height:600px;
+    background-size:cover; 
+    background-position:center; 
+    background-repeat:no-repeat; 
+    position:relative
+}
+.slideInner  .slide:before {
+    content:'';
+    position:absolute;
+    top:0; left:0; bottom:0; right:0;
+    background:rgba(0,0,0,0.3);
+}
+.slideInner  .slide1 { 
+    background-image:url(../images/main-cover1.min.jpg)}
+.slideInner  .slide2 { 
+    background-image:url(../images/main-cover2.min.jpg)}
+.slideInner  .slide  .text { 
+    position:absolute; 
+    /* 공식 left:50%; transform:translateX(-50%)은 작은화면에서 빈공간이 있음에도 불구하고
+        두줄로 처리되는 문제가 발생하므로 이 공식 대신에,
+        width:100%; text-align:center 공식으로 변경함
+    */
+    top:50%; left:0%; width:100%; 
+    transform:translateY(-50%);  
+    text-align:center; color:#fff;
+    /* z-index:9999; */
+}
+.slideInner .text > p:first-child {
+    font-size:70px; 
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+}    
+.slideInner .text > p:nth-child(2) {
+    font-size:19.25px; 
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin:20px 0px 30px } 
+.slideInner .text > p:nth-child(3) > a { display:inline-block; 
+    padding:14px 28px; font-size:14px;
+    border-radius:4px; }
+.slideInner .text > p:nth-child(3) > a:nth-child(1) { color:#fff; 
+    background:rgba(0,0,0,0.5)}
+.slideInner .text > p:nth-child(3) > a:nth-child(2) { color:#000; 
+    background:rgba(255,255,255,0.5)}    
+.slideInner .text > p:nth-child(3) > a:nth-child(1):hover { 
+    background:#ffd23c}
+.slideInner .text > p:nth-child(3) > a:nth-child(2):hover { color:#fff }
+       
+#section .title h2 { font-size:28px; color:#222;
+margin:20px 0 20px; font-weight:bold;
+text-align:center }
+#section .title p {
+    font-size:14px; color:#333;
+    margin-bottom:56px;
+    padding-bottom:25px; 
+    text-align:center; 
+    position:relative; }
+#section .title p:after {
+    content:''; width:100px; 
+    height:2px; 
+    background:#f77070;
+    position:absolute; bottom:0;
+    left:50%; margin-left:-50px;
+}
+#section .title p strong { 
+    font-weight:bold }
+
+.act { padding:80px 0 }
+.act ul li { float:left; width:24%;
+    background-size:auto;
+    background-repeat:no-repeat;
+    height:186px; margin:0 0.5%; 
+    position:relative }
+.act ul li:nth-child(1) {
+    background-image:url(../images/main-business1.min.jpg); }
+.act ul li:nth-child(1):before {
+    content:''; position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(48, 120, 210, 0.5);
+}
+.act ul li:nth-child(2) {
+    background-image:url(../images/main-business2.min.jpg)
+}
+.act ul li:nth-child(2):before {
+    content:''; position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(255, 174, 61, 0.6);
+}
+.act ul li:nth-child(3) {
+    background-image:url(../images/main-business3.min.jpg)
+}
+.act ul li:nth-child(3):before {
+    content:''; position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(48, 205, 210, 0.5);
+}
+.act ul li:nth-child(4) {
+    background-image:url(../images/main-business4.min.jpg)
+}
+.act ul li:nth-child(4):before {
+    content:''; position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(247, 111, 111, 0.5);
+}
+.act ul li div { 
+    position:absolute; top:10px; left:20px;
+    right:20px; bottom:10px; color:#fff; }
+.act ul li div h3 { margin:10px 0; 
+    font-size:19.25px; font-weight:bold }    
+.act ul li div p { font-size:14px; margin:15px 0;
+    line-height:1.5 }
+.act ul li div a { padding: 5px 20px;
+    font-size: 12px; line-height: 1.5;
+    border-radius: 3px;  color: #f8f9fa;
+    border:1px solid #f8f9fa; 
+    letter-spacing:0.5px;
+    transition:all 0.5s;
+ }
+.act ul li div a:hover { 
+    color:#212529; background-color:#f8f9fa }
+.act ul li div a i { display:none }
+
+.curriInfo { padding:84px 0 }
+.curriBox > .column { float:left; width:31.66% }
+.curriBox > .column:nth-child(2) { margin:0 2.5%; }
+.curriBox > .column:first-child > div:first-child,
+.curriBox > .column:nth-child(3) > div:first-child { margin-bottom:15.5px } 
+.curriBox > .column > div { position:relative;  }
+.curriBox .overlay { position:absolute; overflow:hidden;
+    top:0; left:0; right:0; bottom:0; 
+    background:-webkit-linear-gradient(left,  #ffd23c, #ffae3d);
+    background:-moz-linear-gradient(right, #ffd23c, #ffae3d);
+    background:-o-linear-gradient(right, #ffd23c, #ffae3d);
+    background:linear-gradient(to right, #ffd23c, #ffae3d);
+    opacity:0; transition:all 0.5s }
+.curriBox .column > div:hover .overlay {
+    opacity:0.8; }     
+.curriBox  .copy { position:absolute; bottom:-20px;
+    left:20px; right:20px; color:#fff;
+    transition:all 0.5s }  
+.curriBox  .column > div:hover .copy { 
+    bottom:0px; }     
+.curriBox .copy h3 { font-size:24.5px; 
+    font-weight:bold }   
+.curriBox .copy p { font-weight:bold; 
+    font-size:14px; margin:15px 0;
+    line-height:1.5  }       
+
+    
+
+.review { background:#fdeace; padding:84px 0 }
+.review ul li { float:left; width:31.66%;}
+.review ul li:nth-child(2) { margin:0 2.5%}
+.review ul li > div { position:relative }
+.review .quote { font-size:30px; color:#fff;
+    width:56px; height:56px; background:#ffae3d;
+    border-radius:50%; text-align:center; 
+    line-height:56px; 
+    position:absolute; 
+    top:-28px; left:10px; z-index:99999 
+}
+.review .blockQuote { background:#fff;
+    font-size:17.5px; padding:40px; 
+    border-radius:4px; font-style:italic;
+    line-height:1.5; position:relative;
+    margin-bottom:20px; }    
+.review .blockQuote:after {
+    content:''; position:absolute;
+    top:100%; left:40px; 
+    border-top:15px solid #fff; 
+    border-left:15px solid transparent; 
+    border-right:15px solid transparent;
+}  
+.review .client { padding:0 20px; font-size:20px; 
+    font-weight:bold; letter-spacing:-1px }
+.review .client p:nth-child(1) { color:#ffae3d; }
+.review .client a { color:#f76f6f}
+.review .client p:nth-child(2) { color:#fff }
+
+
+.bestChoice { background:url(../images/main-bottomBanner.min.jpg) no-repeat;
+    background-size:cover;  
+    height:160px; 
+    background-attachment: fixed;
+    background-position:center; 
+    font-size:19.25px; color:#fff;
+    text-align:center; 
+    font-weight:bold; position:relative }
+.bestChoice .overlay { position:absolute; 
+    top:0; left:0; right:0; bottom:0; 
+    background:rgba(0,0,0,0.5);  line-height:160px; }  
+
+.csNnotice { background:#f5f5f5; padding:84px 0;
+    color:#333 }
+.csNnotice > .row > div {
+    float:left; width:31.66%;  }
+.csNnotice > .row > div:nth-child(2) {
+    margin:0 2.5% }
+.csNnotice h2 { font-size:21px; color:#222;
+    letter-spacing:-1px; font-weight:bold;
+    border-bottom: 2px solid #383d41;
+    padding-bottom: 5px; margin-bottom:10px; }    
+.csNnotice .cscenter p:nth-child(1),
+.csNnotice .cscenter p:nth-child(2) {
+    font-size:19.25px; font-weight:bold; }
+.csNnotice .cscenter p:nth-child(3),
+.csNnotice .cscenter p:nth-child(4) {
+    font-size:14px; line-height:1.5 }
+.csNnotice .consult { font-size:14px; 
+    line-height:1.5 } 
+.csNnotice .consult a { display:block; 
+    padding:10px 20px; color:#fff;
+    background:rgba(0,0,0,0.5);
+    width:133px; text-align:center; 
+    margin-top:10px; border-radius:4px } 
+.csNnotice .notice li { padding:2px }     
+.csNnotice .notice a { font-size:14px; }
+.csNnotice .notice a:before { content:'ㆍ' }    
+.csNnotice .notice a:after { content:' NEW'; 
+    font-size:10px; color:#ff0; 
+    font-weight:bold }               
+.csNnotice .notice+.more { 
+    position:absolute; top:0; right:0;
+    padding:5px 10px; color:#fff;
+    background:rgba(0,0,0,0.5); 
+    font-size:12px; border-radius:4px; }
+.csNnotice .row > div:nth-child(3) {  
+    position:relative; }
+
+
