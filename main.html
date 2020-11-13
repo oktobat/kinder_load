@@ -121,6 +121,30 @@
               </div>
           </div>    
       </article>
+
+      <article class="touchcon row">
+        <div class="lotation">
+            <ul>
+                <li>터치1그룹</li>
+                <li>터치1그룹</li>
+                <li>터치1그룹</li>
+                <li>터치1그룹</li>
+            </ul>
+            <ul>
+                <li>터치2그룹</li>
+                <li>터치2그룹</li>
+                <li>터치2그룹</li>
+                <li>터치2그룹</li>
+            </ul>
+            <ul>
+                <li>터치3그룹</li>
+                <li>터치3그룹</li>
+                <li>터치3그룹</li>
+                <li>터치3그룹</li>
+            </ul>
+        </div>
+      </article>
+
       <article class="review">
           <div class="row">
               <div class="title">
@@ -233,6 +257,16 @@
                 arrows:false
             }
         }]
+    })
+
+    $(".touchcon .lotation ul").on('touchmove', function(){
+        $(this).animate({
+            marginLeft:"-33.33%"
+        }, 500, function(){
+            $(this).appendTo('.lotation').css({
+                marginLeft:"0%"
+            })
+        })
     })
 
 })(jQuery)
