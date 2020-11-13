@@ -174,7 +174,7 @@ text-align:center }
 .touchcon.row { overflow:hidden  }
 .touchcon .lotation { width:300%; background:lime; overflow:hidden }
 .touchcon ul { float:left; width: 33.33%;  border:1px solid #f00; overflow:hidden }   
-.touchcon ul li { float:left; width:25%; padding:50px; border:1px solid #00f} 
+.touchcon ul li { float:left; width:25%; padding:50px 10px; border:1px solid #00f} 
     
 
 .review { background:#fdeace; padding:84px 0 }
