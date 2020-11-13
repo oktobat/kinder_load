@@ -125,22 +125,22 @@
       <article class="touchcon row">
         <div class="lotation">
             <ul>
-                <li>터치1그룹</li>
-                <li>터치1그룹</li>
-                <li>터치1그룹</li>
-                <li>터치1그룹</li>
+                <li>터치1</li>
+                <li>터치1</li>
+                <li>터치1</li>
+                <li>터치1</li>
             </ul>
             <ul>
-                <li>터치2그룹</li>
-                <li>터치2그룹</li>
-                <li>터치2그룹</li>
-                <li>터치2그룹</li>
+                <li>터치2</li>
+                <li>터치2</li>
+                <li>터치2</li>
+                <li>터치2</li>
             </ul>
             <ul>
-                <li>터치3그룹</li>
-                <li>터치3그룹</li>
-                <li>터치3그룹</li>
-                <li>터치3그룹</li>
+                <li>터치3</li>
+                <li>터치3</li>
+                <li>터치3</li>
+                <li>터치3</li>
             </ul>
         </div>
       </article>
@@ -260,7 +260,7 @@
     })
 
     $(".touchcon .lotation ul").on('touchmove', function(){
-        $(this).animate({
+        $(this).stop().animate({
             marginLeft:"-33.33%"
         }, 500, function(){
             $(this).appendTo('.lotation').css({
